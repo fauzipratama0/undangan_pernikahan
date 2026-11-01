@@ -1,0 +1,46 @@
+/* root untuk membuat kode dasar/akar yang nanti bisa dipakai berulang */
+:root {
+   --white :white;
+   --bg: green;
+   --shadow: 0 2px 2px 2px rgb(0,0,0/0.5)  /* offset 0 adalah x,  2px adalah ofset y, blur 2px */
+}
+
+body {
+    font-size: 1.2rem; /* lebih besar dari defaultnya, 1.2 x 16pixel*/
+    font-family: 'Work Sans', sans-serif;   
+    min-height: 2000px; /* dibuat layar bisa scroll kebawah*/
+}
+
+.hero {
+    min-height:100vh; /* ukuran full layar satuan viewport height */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: green;
+    color: var(--white);
+}
+
+.hero h1 {
+    font-family: 'sacramento', cursive;
+    font-size: 6rem;
+}
+
+.hero h4 {
+    font-size: 1.6rem;
+}
+.hero p {
+    font-size: 1.4rem;
+}
+.hero a {
+    background-color: var(--white);
+    
+}
+
+.hero a:hover {
+    background-color: pink;    /*hover adalah elemen untuk membuatkan tampilan berubah warna ketika diarahkan.*/
+    color: white;
+    
+}
