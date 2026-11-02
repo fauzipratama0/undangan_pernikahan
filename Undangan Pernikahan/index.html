@@ -30,8 +30,8 @@
             <h4> Kepada Bapak/Ibuk/Saudara/i</h4>
             <h1>Fauzi & Anisa</h1>
             <p>Akan melangsungkan resepsi pernikahan dalam :</p>
-            <div class="countdown"></div>
-            <a href="#Undangan" class="btn btn-lg mt-4">Lihat Undangan</a> <!-- mt-4 adalah margin top 4 untuk std bootstrap-->
+            <div class="countdown" id="demo"></div>
+            <a href="#Undangan" class="btn btn-lg mt-4" onclick="document.getElementById('demo').innerHTML= Date() ">Lihat Undangan</a> <!-- mt-4 adalah margin top 4 untuk std bootstrap-->
 
         </main>
     </section>
@@ -39,47 +39,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
     </script>
 
-    <script>
-        simplyCountdown('.countdown', {
-          year: 2015, // Target year (required)
-        month: 6, // Target month [1-12] (required)
-        day: 28, // Target day [1-31] (required)
-        hours: 0, // Target hour [0-23], default: 0
-        minutes: 0, // Target minute [0-59], default: 0
-        seconds: 0, // Target second [0-59], default: 0
-        words: { // Custom labels, with lambda for plurals
-            days: { root: 'day', lambda: (root, n) => n > 1 ? root + 's' : root },
-            hours: { root: 'hour', lambda: (root, n) => n > 1 ? root + 's' : root },
-            minutes: { root: 'minute', lambda: (root, n) => n > 1 ? root + 's' : root },
-            seconds: { root: 'second', lambda: (root, n) => n > 1 ? root + 's' : root }
-        },
-        plural: true, // Use plurals for labels
-        inline: false, // Inline format: e.g., "24 days, 4 hours, 2 minutes"
-        inlineSeparator: ', ', // Separator for inline format, default: ", "
-        inlineClass: 'simply-countdown-inline', // CSS class for inline countdown
-        enableUtc: false, // Use UTC time if true
-        refresh: 1000, // Refresh interval in ms, default: 1000
-        sectionClass: 'simply-section', // CSS class for each countdown section
-        amountClass: 'simply-amount', // CSS class for numeric values
-        wordClass: 'simply-word', // CSS class for unit labels
-        zeroPad: false, // Pad numbers with leading zero
-        removeZeroUnits: false, // Remove units with zero value
-        countUp: false, // Count up after reaching zero
-        onEnd: () => {}, // Callback when countdown ends
-        onStop: () => {}, // Callback when countdown is stopped
-        onResume: () => {}, // Callback when countdown is resumed
-        onUpdate: (params) => {} // Callback when countdown is updated
-    });
-
-    // Also, you can init with already existing Javascript Object.
-    let myElement = document.querySelector('.my-countdown');
-    simplyCountdown(myElement, { /* options */ });
-
-    let multipleElements = document.querySelectorAll('.my-countdown');
-    simplyCountdown(multipleElements, { /* options */ });                    
-      
-    </script>
-
+  
     <div class="square">
       <p><h5> Barakallahu lakuma bagi kedua mempelai. semoga Allah senantiasa merahmati keduanya.
        <br/> <h5>Turut mengundang keluarga kedua mempelai (Ayah, Ibu, Adik/kakak, Kakek/Nenek, Ipar, Sumando, Datuak, Makwo Dll )</h5>
